@@ -1,23 +1,22 @@
 package haja.Project.api;
 
-import com.sun.net.httpserver.Authenticator;
-import haja.Project.api.dto.MemberRequestDto;
-import haja.Project.api.dto.MemberResponseDto;
-import haja.Project.domain.*;
+import haja.Project.domain.Authority;
+import haja.Project.domain.Image;
+import haja.Project.domain.Member;
+import haja.Project.domain.Part;
 import haja.Project.service.MemberService;
-import haja.Project.service.TasknoticeService;
 import haja.Project.util.SecurityUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Null;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.imgscalr.Scalr;
-import org.springframework.http.*;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -32,10 +31,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.time.Period;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 // 사진을 100kb로 줄이자

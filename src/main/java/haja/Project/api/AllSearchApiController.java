@@ -1,21 +1,20 @@
 package haja.Project.api;
 
 import haja.Project.domain.*;
-import haja.Project.service.*;
+import haja.Project.service.TaskService;
+import haja.Project.service.TasknoticeService;
+import haja.Project.service.Tasknotice_TagService;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

@@ -3,7 +3,9 @@ package haja.Project.api.dto;
 import haja.Project.domain.Authority;
 import haja.Project.domain.Image;
 import haja.Project.domain.Member;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 

@@ -1,7 +1,6 @@
 package haja.Project.api;
 
 import haja.Project.domain.Tag;
-import haja.Project.repository.TagRepository;
 import haja.Project.service.TagService;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
