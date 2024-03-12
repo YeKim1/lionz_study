@@ -19,6 +19,10 @@
 
 공지사항과 과제 안내, 과제 제출, 동아리원 연락처를 모아서 볼 수 있습니다. 
 
+## ERD Diagrams
+
+![lionz](https://github.com/YeKim1/lionz_study/assets/94509287/08b2ec17-12d6-4cfd-bd74-f7142f40b647)
+
 
 ## 기여한 부분
 
