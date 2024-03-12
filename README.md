@@ -9,7 +9,7 @@
 
 [API 링크](https://lionz.kro.kr/swagger-ui/index.html#/)
 
-[서비스 링크](https://lionz-inha.pages.dev/) 
+[서비스 링크(배포 중단 상태)](https://lionz-inha.pages.dev/) 
 
 ## 프로젝트 소개
 
